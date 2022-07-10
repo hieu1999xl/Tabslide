@@ -1,0 +1,178 @@
+.tab {
+  display: flex;
+  justify-content: center;
+}
+.tab button {
+  background: #2ecc71;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-right: 10px;
+  border: 0;
+  color: white;
+  font-size: 17px;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: 0;
+}
+
+.tabcontent {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+
+.content_box-1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+.content {
+ max-height: 580px;
+}
+
+body {
+  margin: 0;
+
+}
+
+
+	canvas {
+    width: 100% !important;
+}
+.cloudimage-360 {
+	width: 100% !important;
+  max-width: 870px;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  width: 100% !important;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: initial;
+  max-height: 500px;
+  background-color: #1983b6;
+  z-index: 100;
+  display: none;
+}
+
+/* pane 360 begin */
+
+.CloudPano#MMqLrAhy2oN #iframeCover {
+  background: url("https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+  background-size: cover;
+}
+
+
+
+.CloudPano #iframeCover {
+  max-height: inherit;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  height: 500px;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  z-index: 1;
+}
+
+.CloudPano #iframeCover.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.CloudPano .fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.CloudPano #hidableElements {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: inline-block;
+}
+
+
+
+.CloudPano #hidableElements h1 {
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1;
+  margin: auto;
+  text-shadow: black 20px 20px 20px;
+}
+
+.CloudPano #hidableElements h1:hover {
+  -webkit-transform: rotateY(30deg);
+  -moz-transform: rotateY(30deg);
+  -ms-transform: rotateY(30deg);
+  -o-transform: rotateY(30deg);
+  transform: rotateY(30deg);
+  -webkit-transform: perspective(1000) rotateY(30deg);
+  -moz-transform: perspective(1000) rotateY(30deg);
+  -ms-transform: perspective(1000) rotateY(30deg);
+  -o-transform: perspective(1000) rotateY(30deg);
+  transform: perspective(1000) rotateY(30deg);
+}
+
+.CloudPano iframe {
+  max-height: 95vh;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+
+iframe:-webkit-full-screen {
+	max-width: none;
+}
+
+iframe:-moz-full-screen {
+	max-width: none;
+}
+
+iframe:-ms-fullscreen {
+  max-width: none;
+}
+
+iframe:full-screen {
+	max-width: none;
+}
+
+iframe:fullscreen {
+	max-width: none;
+}
