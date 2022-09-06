@@ -478,49 +478,6 @@ const HOTSPOTS_CONFIG = [
   })
   
   
-  $('body').on('dblclick', function() {
-  });
-  
-  var count = 0;
-  
-  $('body').on('dblclick', function() {
-  
-      //console.log(viewer.getPosition());
-      var myInfospot = new PANOLENS.Infospot( 700, "https://cdn2.iconfinder.com/data/icons/button-v1/30/13-512.png", true);
-    // myInfospot.material.color.set( 0xf6ac30 );
-  
-       let clickedPos = viewer.getPosition();
-      myInfospot.position.set(clickedPos.x * -1, clickedPos.y, clickedPos.z);
-      myInfospot.addHoverText("DAMAGE",count);
-      myInfospot.onClick(console.warn("HALA MADRID",clickedPos.x * -1, clickedPos.y, clickedPos.z))
-    myInfospot.addEventListener('click', function(event){console.warn(event.target)})
-      panorama.add( myInfospot );
-      myInfospot.name=count
-       panorama.toggleInfospotVisibility(true);
-    count=++count;
-    viewer.autoHideInfospot = false;
-      viewer.autoHideInfospot = true;
-  });
-  
-  PANOLENS.Viewer.prototype.getPosition = function () {
-      var intersects, point, panoramaWorldPosition, outputPosition;
-      intersects = this.raycaster.intersectObject( this.panorama, true );
-  
-      if ( intersects.length > 0 ) {
-          point = intersects[0].point;
-          panoramaWorldPosition = this.panorama.getWorldPosition();
-  
-          // Panorama is scaled -1 on X axis
-          outputPosition = new THREE.Vector3(
-              -(point.x - panoramaWorldPosition.x).toFixed(2),
-              (point.y - panoramaWorldPosition.y).toFixed(2),
-              (point.z - panoramaWorldPosition.z).toFixed(2)
-          );
-      }
-    
-      return outputPosition;
-  };
-  
   function handle_MMqLrAhy2oN() {
     document.getElementById("pano").src = "https://demos.evox.com/SquareSpaceWeb/X5/13751_in1024.html?wmode=opaque"; 
     document.getElementById("pano").classList.add("fadeIn");
@@ -530,9 +487,8 @@ const HOTSPOTS_CONFIG = [
     success: function(data){
     }
   }).done(function() {
-      console.log('xin chao')
     setTimeout(function(){
-      $("#particles-js").fadeOut(300);
+      // $("#particles-js").fadeOut(300);
     },2000);
   });
   }
@@ -543,9 +499,8 @@ const HOTSPOTS_CONFIG = [
         success: function(data){
         }
       }).done(function() {
-          console.log('xin chao')
         setTimeout(function(){
-          $("#particles-js").fadeOut(300);
+          // $("#particles-js").fadeOut(300);
         },2000);
       });
   }

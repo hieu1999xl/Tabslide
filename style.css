@@ -176,3 +176,9 @@ iframe:full-screen {
 iframe:fullscreen {
 	max-width: none;
 }
+
+@media only screen and (max-width: 991px) {
+  .cloudimage-360 {
+    max-width: unset;
+  }
+}
