@@ -142,7 +142,7 @@ buttonElement.forEach(function (i) {
     });
 });
   
-// 350 
+// Hotspots config
 
 const HOTSPOTS_CONFIG = [
     {
@@ -266,9 +266,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 16,  xCoord: 135, yCoord: 365 },
               { imageIndex: 17,  xCoord: 125, yCoord: 355 },
               { imageIndex: 18,  xCoord: 115, yCoord: 345 },
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
   
       ],
       variant: {
@@ -293,9 +290,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 16,  xCoord: 365, yCoord: 340 },
               { imageIndex: 17,  xCoord: 365, yCoord: 345 },
               { imageIndex: 18,  xCoord: 355, yCoord: 355 },
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
   
       ],
       variant: {
@@ -322,10 +316,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 18,  xCoord: 250, yCoord: 325 },
               { imageIndex: 19,  xCoord: 240, yCoord: 325 },
   
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
-  
       ],
       variant: {
         timages: [
@@ -350,11 +340,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 17,  xCoord: 263, yCoord: 265 },
               { imageIndex: 18,  xCoord: 253, yCoord: 265 },
               { imageIndex: 19,  xCoord: 245, yCoord: 265 },
-  
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
-  
       ],
       variant: {
         images: [
@@ -380,11 +365,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 17,  xCoord: 335, yCoord: 265 },
               { imageIndex: 18,  xCoord: 328, yCoord: 265 },
               { imageIndex: 19,  xCoord: 318, yCoord: 265 },
-  
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
-  
       ],
       variant: {
         images: [
@@ -410,10 +390,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 18,  xCoord: 290, yCoord: 180 },
               { imageIndex: 19,  xCoord: 280, yCoord: 190 },
   
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
-  
       ],
       variant: {
         images: [
@@ -438,10 +414,6 @@ const HOTSPOTS_CONFIG = [
               { imageIndex: 18,  xCoord: 415, yCoord: 230 },
               { imageIndex: 19,  xCoord: 415, yCoord: 235 },
   
-              // { imageIndex: 19,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 20,  xCoord: 120, yCoord: 355 },
-              // { imageIndex: 21,  xCoord: 120, yCoord: 355 },
-  
       ],
       variant: {
         images: [
@@ -456,7 +428,7 @@ const HOTSPOTS_CONFIG = [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id justo lobortis, posuere eros non, sagittis nisl. Fusce vehicula turpis nec lorem scelerisque",
         moreDetailsUrl: "/"
       }
-    },
+    }, 
   ];
   
   window.CI360.addHotspots("hotspot-example", HOTSPOTS_CONFIG);
@@ -478,7 +450,7 @@ const HOTSPOTS_CONFIG = [
   })
   
   
-  function handle_MMqLrAhy2oN() {
+  function handle_pano() {
     document.getElementById("pano").src = "https://demos.evox.com/SquareSpaceWeb/X5/13751_in1024.html?wmode=opaque"; 
     document.getElementById("pano").classList.add("fadeIn");
    document.getElementById("iframeCover").classList.add("fadeOut");
